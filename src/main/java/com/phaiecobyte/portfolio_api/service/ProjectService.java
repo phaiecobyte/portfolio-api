@@ -9,6 +9,7 @@ import java.util.List;
 
 
 public interface ProjectService {
+    Long count();
     List<Project> getAll();
     Page<Project> paged(Pageable pageable);
     Project getById(long id);

@@ -1,0 +1,39 @@
+# Ignore Maven and Gradle build directories
+build/
+target/
+
+# Ignore logs
+*.log
+logs/
+
+# Ignore IntelliJ IDEA and Eclipse files
+*.iml
+.idea/
+*.ipr
+*.iws
+*.class
+.project
+.settings/
+*.classpath
+
+# Ignore OS or Editor system files
+.DS_Store
+Thumbs.db
+
+# Git files
+.git/
+.gitignore
+
+# Ignore test reports
+test-output/
+surefire-reports/
+jacoco.exec
+
+# Node or frontend stuff (if using Angular/React inside project)
+node_modules/
+dist/
+.env
+
+# Ignore Docker files if you don't want to copy them
+docker-compose.yml
+Dockerfile

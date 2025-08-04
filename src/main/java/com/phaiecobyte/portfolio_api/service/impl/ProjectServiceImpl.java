@@ -16,7 +16,10 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ProjectServiceImpl implements ProjectService {
     private final ProjectRepository repository;
-
+    @Override
+    public Long count(){
+        return repository.count();
+    }
     @Override
     public List<Project> getAll() {
         return repository.findAll();
@@ -51,7 +54,7 @@ public class ProjectServiceImpl implements ProjectService {
 
         existProject.setUpdatedAt(LocalDateTime.now());
 
-        return existProject;
+        return repository.save(existProject);
     }
 
     @Override
