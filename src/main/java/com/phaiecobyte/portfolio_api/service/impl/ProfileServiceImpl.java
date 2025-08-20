@@ -12,7 +12,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -50,7 +49,6 @@ public class ProfileServiceImpl implements ProfileService {
                 throw new RuntimeException("Failed to read file bytes", e);
             }
         }
-
         return repository.save(profile);
     }
 
@@ -66,8 +64,6 @@ public class ProfileServiceImpl implements ProfileService {
 
         return repository.save(existingProfile);
     }
-
-
 
     @Override
     public void delete(long id) {

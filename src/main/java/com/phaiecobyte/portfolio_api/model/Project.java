@@ -20,6 +20,8 @@ public class Project {
     private String description;
     @ElementCollection
     private List<String> tech;
+    @ElementCollection
+    private List<String> feature;
     private String sourceCodeUrl;
     private String demoVideoUrl;
 
