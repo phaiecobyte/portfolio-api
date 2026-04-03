@@ -10,7 +10,7 @@ import java.util.List;
 @Entity
 @Table(name ="tbl_project")
 @Data
-public class Project {
+public class Project extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -25,8 +25,13 @@ public class Project {
     private String sourceCodeUrl;
     private String demoVideoUrl;
 
-    private LocalDateTime createdAt;
-    private String createdBy;
-    private LocalDateTime updatedAt;
-    private String updatedBy;
+    public Project(){}
+    public Project(String name, List<String> tech ,String demoVideoUrl, String description, List<String> feature,  String sourceCodeUrl) {
+        this.demoVideoUrl = demoVideoUrl;
+        this.description = description;
+        this.feature = feature;
+        this.name = name;
+        this.sourceCodeUrl = sourceCodeUrl;
+        this.tech = tech;
+    }
 }

@@ -7,7 +7,7 @@ import lombok.Data;
 @Entity
 @Table(name = "tbl_profile")
 @Data
-public class Profile {
+public class Profile extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
