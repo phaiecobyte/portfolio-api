@@ -5,7 +5,11 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "tbl_skill")
+@Table(name = "tbl_skill",
+        uniqueConstraints = @UniqueConstraint(
+                name = "uk_skill", columnNames = "name"
+        )
+)
 public class Skill {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -13,4 +17,12 @@ public class Skill {
     private String name;
     private String icon;
     private int level;
+
+    public Skill(){}
+    public Skill(String name, int level, String icon) {
+        this.name = name;
+        this.level = level;
+        this.icon = icon;
+    }
+
 }

@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "tbl_experience")
 @Data
-public class Experience {
+public class Experience extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -19,8 +19,11 @@ public class Experience {
     @Max(5000)
     private String description;
 
-    private LocalDateTime createdAt;
-    private String createdBy;
-    private LocalDateTime updatedAt;
-    private String updatedBy;
+    public Experience(){}
+    public Experience(String position, String startDate, String endDate, String description) {
+        this.description = description;
+        this.endDate = endDate;
+        this.position = position;
+        this.startDate = startDate;
+    }
 }

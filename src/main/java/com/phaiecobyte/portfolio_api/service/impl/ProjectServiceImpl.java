@@ -52,7 +52,6 @@ public class ProjectServiceImpl implements ProjectService {
         existProject.setSourceCodeUrl(project.getSourceCodeUrl());
         existProject.setDemoVideoUrl(project.getDemoVideoUrl());
 
-        existProject.setUpdatedAt(LocalDateTime.now());
 
         return repository.save(existProject);
     }
