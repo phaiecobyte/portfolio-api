@@ -13,7 +13,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class TodoRes extends AuditField {
+public class TodoRes {
     private UUID id;
     private String title;
     private String description;
