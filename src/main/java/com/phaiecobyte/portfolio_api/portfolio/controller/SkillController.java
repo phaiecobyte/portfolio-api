@@ -1,7 +1,7 @@
-package com.phaiecobyte.portfolio_api.controller;
+package com.phaiecobyte.portfolio_api.portfolio.controller;
 
-import com.phaiecobyte.portfolio_api.model.Skill;
-import com.phaiecobyte.portfolio_api.service.impl.SkillServiceImpl;
+import com.phaiecobyte.portfolio_api.portfolio.model.Skill;
+import com.phaiecobyte.portfolio_api.portfolio.service.impl.SkillServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;

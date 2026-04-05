@@ -1,7 +1,8 @@
-package com.phaiecobyte.portfolio_api.component;
+package com.phaiecobyte.portfolio_api.portfolio.component;
 
-import com.phaiecobyte.portfolio_api.model.*;
-import com.phaiecobyte.portfolio_api.repository.*;
+
+import com.phaiecobyte.portfolio_api.portfolio.model.*;
+import com.phaiecobyte.portfolio_api.portfolio.repository.*;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

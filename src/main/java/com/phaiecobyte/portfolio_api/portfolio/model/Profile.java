@@ -1,12 +1,14 @@
-package com.phaiecobyte.portfolio_api.model;
+package com.phaiecobyte.portfolio_api.portfolio.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Max;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
 @Table(name = "tbl_profile")
-@Data
+@Getter
+@Setter
 public class Profile extends BaseEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

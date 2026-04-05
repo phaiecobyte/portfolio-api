@@ -1,6 +1,6 @@
-package com.phaiecobyte.portfolio_api.service;
+package com.phaiecobyte.portfolio_api.portfolio.service;
 
-import com.phaiecobyte.portfolio_api.model.Education;
+import com.phaiecobyte.portfolio_api.portfolio.model.Education;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

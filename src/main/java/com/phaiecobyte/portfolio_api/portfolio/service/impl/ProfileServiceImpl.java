@@ -1,8 +1,9 @@
-package com.phaiecobyte.portfolio_api.service.impl;
+package com.phaiecobyte.portfolio_api.portfolio.service.impl;
 
-import com.phaiecobyte.portfolio_api.model.Profile;
-import com.phaiecobyte.portfolio_api.repository.ProfileRepository;
-import com.phaiecobyte.portfolio_api.service.ProfileService;
+
+import com.phaiecobyte.portfolio_api.portfolio.model.Profile;
+import com.phaiecobyte.portfolio_api.portfolio.repository.ProfileRepository;
+import com.phaiecobyte.portfolio_api.portfolio.service.ProfileService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
