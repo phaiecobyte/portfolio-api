@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
 import java.util.UUID;
 
 @Repository
-public interface TodoRepository extends JpaRepository<Todo, UUID> {
+public interface TodoRepository extends JpaRepository<Todo, Long> {
     Page<Todo> findByStatus(TodoStatus status, Pageable pageable);
 }

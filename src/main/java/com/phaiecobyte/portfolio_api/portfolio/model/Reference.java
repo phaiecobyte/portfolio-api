@@ -1,12 +1,13 @@
 package com.phaiecobyte.portfolio_api.portfolio.model;
 
+import com.phaiecobyte.portfolio_api.common.AuditField;
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Entity
 @Table(name = "tbl_reference")
 @Data
-public class Reference extends BaseEntity{
+public class Reference{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

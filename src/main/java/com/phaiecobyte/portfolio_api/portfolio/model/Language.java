@@ -1,12 +1,13 @@
 package com.phaiecobyte.portfolio_api.portfolio.model;
 
+import com.phaiecobyte.portfolio_api.common.AuditField;
 import jakarta.persistence.*;
 import lombok.Data;
 
 @Data
 @Entity
 @Table(name = "tbl_language")
-public class Language extends BaseEntity{
+public class Language {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

@@ -31,7 +31,7 @@ public class TodoController {
 
     @GetMapping("/getById")
     public ResponseEntity<Object> getBy(
-            @RequestParam(value = "id") UUID id
+            @RequestParam(value = "id") long id
     ){
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -46,7 +46,7 @@ public class TodoController {
     }
 
     @PutMapping("/update")
-    public ResponseEntity<Object> updateTodo(@RequestParam(value = "id")UUID id , @RequestBody TodoUpdateReq req){
+    public ResponseEntity<Object> updateTodo(@RequestParam(value = "id") long id , @RequestBody TodoUpdateReq req){
         return ResponseEntity
                 .status(HttpStatus.OK)
                 .body(ApiResponse.apiSuccessRes(true,"Updated todo successfully...!",todoService.update(id,req)));
@@ -54,7 +54,7 @@ public class TodoController {
 
     @PatchMapping("/updateStatus")
     public ResponseEntity<Object> updateStatus(
-            @RequestParam(value = "id") UUID uuid,
+            @RequestParam(value = "id") long uuid,
             @RequestParam(value = "status") TodoStatus status){
         return ResponseEntity
                 .status(HttpStatus.OK)
@@ -62,7 +62,7 @@ public class TodoController {
     }
 
     @DeleteMapping
-    public ResponseEntity<Object> delete(@RequestParam(value = "id") UUID id){
+    public ResponseEntity<Object> delete(@RequestParam(value = "id") long id){
         todoService.delete(id);
         return ResponseEntity
                 .status(HttpStatus.OK)

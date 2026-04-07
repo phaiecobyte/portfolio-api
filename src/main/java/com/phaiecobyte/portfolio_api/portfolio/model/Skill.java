@@ -10,7 +10,7 @@ import lombok.Data;
                 name = "uk_skill", columnNames = "name"
         )
 )
-public class Skill {
+public class Skill{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
