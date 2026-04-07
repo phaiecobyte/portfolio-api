@@ -35,7 +35,7 @@ public class TodoServiceImpl implements TodoService{
     }
 
     @Override
-    public TodoRes getById(UUID id) {
+    public TodoRes getById(long id) {
         Todo entity = todoRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Todo not found with id: " + id));
         return todoMapper.toRes(entity);
@@ -54,7 +54,7 @@ public class TodoServiceImpl implements TodoService{
     }
 
     @Override
-    public TodoRes update(UUID id, TodoUpdateReq req){
+    public TodoRes update(long id, TodoUpdateReq req){
         Todo entity = todoRepository.findById(id)
                 .orElseThrow(()-> new EntityNotFoundException("Todo not found with id:"+id));
 
@@ -66,14 +66,14 @@ public class TodoServiceImpl implements TodoService{
     }
 
     @Override
-    public void delete(UUID id) {
+    public void delete(long id) {
         Todo entity = todoRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Todo not found with id: " + id));
         todoRepository.delete(entity);
     }
 
     @Override
-    public TodoRes changeStatus(UUID id, TodoStatus status) {
+    public TodoRes changeStatus(long id, TodoStatus status) {
         Todo entity = todoRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Todo not found with id: " + id));
 

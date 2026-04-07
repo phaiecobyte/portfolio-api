@@ -11,9 +11,9 @@ import java.util.UUID;
 
 public interface TodoService {
     Page<TodoRes> list(TodoStatus status, Pageable pageable);
-    TodoRes getById(UUID id);
+    TodoRes getById(long id);
     TodoRes create(TodoCreateReq req);
-    TodoRes update(UUID id, TodoUpdateReq req);
-    TodoRes changeStatus(UUID id, TodoStatus status);
-    void delete(UUID id);
+    TodoRes update(long id, TodoUpdateReq req);
+    TodoRes changeStatus(long id, TodoStatus status);
+    void delete(long id);
 }

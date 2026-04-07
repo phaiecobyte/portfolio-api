@@ -14,7 +14,7 @@ import java.util.UUID;
 @AllArgsConstructor
 @Builder
 public class TodoRes {
-    private UUID id;
+    private long id;
     private String title;
     private String description;
     private TodoStatus status;

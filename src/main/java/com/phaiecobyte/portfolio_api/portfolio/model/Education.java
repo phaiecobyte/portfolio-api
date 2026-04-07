@@ -6,15 +6,21 @@ import lombok.Data;
 @Entity
 @Table(name = "tbl_education")
 @Data
-public class Education extends BaseEntity{
+public class Education {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Column(name = "degree", length = 50)
     private String degree;
+    @Column(name = "major", length = 50)
     private String major;
+    @Column(name = "school", length = 50)
     private String school;
+    @Column(name = "start_date")
     private String startDate;
+    @Column(name = "end_date")
     private String endDate;
+    @Column(name = "address", length = 255)
     private String address;
 
     public Education(){}

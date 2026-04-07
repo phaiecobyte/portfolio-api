@@ -1,22 +1,27 @@
 package com.phaiecobyte.portfolio_api.portfolio.model;
 
 import jakarta.persistence.*;
-import jakarta.validation.constraints.Max;
-import lombok.Data;
-
-import java.time.LocalDateTime;
+import lombok.Getter;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
 @Table(name = "tbl_experience")
-@Data
-public class Experience extends BaseEntity{
+public class Experience {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+    @Column(name = "position", length = 50)
     private String position;
+
+    @Column(name = "start_date")
     private String startDate;
+
+    @Column(name = "end_date")
     private String endDate;
-    @Max(5000)
+
+    @Column(name = "description", length = 500)
     private String description;
 
     public Experience(){}
