@@ -1,7 +1,7 @@
-package com.phaiecobyte.portfolio_api.portfolio.service.impl;
+package com.phaiecobyte.portfolio_api.module.portfolio.service.impl;
 
 
-import com.phaiecobyte.portfolio_api.portfolio.service.TelegramService;
+import com.phaiecobyte.portfolio_api.module.portfolio.service.TelegramService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;

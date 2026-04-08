@@ -1,12 +1,10 @@
-package com.phaiecobyte.portfolio_api.todo.dto.res;
+package com.phaiecobyte.portfolio_api.module.todo.dto.res;
 
-import com.phaiecobyte.portfolio_api.common.AuditField;
-import com.phaiecobyte.portfolio_api.todo.enums.TodoPriority;
-import com.phaiecobyte.portfolio_api.todo.enums.TodoStatus;
+import com.phaiecobyte.portfolio_api.module.todo.enums.TodoPriority;
+import com.phaiecobyte.portfolio_api.module.todo.enums.TodoStatus;
 import lombok.*;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Getter
 @Setter

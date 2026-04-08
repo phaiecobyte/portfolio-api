@@ -1,8 +1,8 @@
-package com.phaiecobyte.portfolio_api.portfolio.controller;
+package com.phaiecobyte.portfolio_api.module.portfolio.controller;
 
 
-import com.phaiecobyte.portfolio_api.portfolio.model.Education;
-import com.phaiecobyte.portfolio_api.portfolio.service.impl.EducationServiceImpl;
+import com.phaiecobyte.portfolio_api.module.portfolio.model.Education;
+import com.phaiecobyte.portfolio_api.module.portfolio.service.impl.EducationServiceImpl;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.domain.Pageable;

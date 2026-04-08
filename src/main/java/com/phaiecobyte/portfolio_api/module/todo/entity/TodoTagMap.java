@@ -1,4 +1,4 @@
-package com.phaiecobyte.portfolio_api.todo.entity;
+package com.phaiecobyte.portfolio_api.module.todo.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
