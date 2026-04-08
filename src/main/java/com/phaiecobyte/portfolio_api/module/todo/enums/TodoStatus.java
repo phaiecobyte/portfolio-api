@@ -1,4 +1,4 @@
-package com.phaiecobyte.portfolio_api.todo.enums;
+package com.phaiecobyte.portfolio_api.module.todo.enums;
 
 public enum TodoStatus {
     TODO,

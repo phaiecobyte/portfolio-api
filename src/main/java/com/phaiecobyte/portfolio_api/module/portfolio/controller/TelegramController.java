@@ -1,9 +1,9 @@
-package com.phaiecobyte.portfolio_api.portfolio.controller;
+package com.phaiecobyte.portfolio_api.module.portfolio.controller;
 
 
-import com.phaiecobyte.portfolio_api.portfolio.model.Message;
-import com.phaiecobyte.portfolio_api.portfolio.repository.MessageRepository;
-import com.phaiecobyte.portfolio_api.portfolio.service.TelegramService;
+import com.phaiecobyte.portfolio_api.module.portfolio.model.Message;
+import com.phaiecobyte.portfolio_api.module.portfolio.repository.MessageRepository;
+import com.phaiecobyte.portfolio_api.module.portfolio.service.TelegramService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

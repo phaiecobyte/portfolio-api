@@ -1,13 +1,12 @@
-package com.phaiecobyte.portfolio_api.todo.dto.req;
+package com.phaiecobyte.portfolio_api.module.todo.dto.req;
 
-import com.phaiecobyte.portfolio_api.todo.enums.TodoPriority;
-import com.phaiecobyte.portfolio_api.todo.enums.TodoStatus;
+import com.phaiecobyte.portfolio_api.module.todo.enums.TodoPriority;
+import com.phaiecobyte.portfolio_api.module.todo.enums.TodoStatus;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import lombok.*;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Getter
 @Setter

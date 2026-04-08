@@ -1,12 +1,12 @@
-package com.phaiecobyte.portfolio_api.todo.service;
+package com.phaiecobyte.portfolio_api.module.todo.service;
 
-import com.phaiecobyte.portfolio_api.todo.dto.req.TodoCreateReq;
-import com.phaiecobyte.portfolio_api.todo.dto.req.TodoUpdateReq;
-import com.phaiecobyte.portfolio_api.todo.dto.res.TodoRes;
-import com.phaiecobyte.portfolio_api.todo.entity.Todo;
-import com.phaiecobyte.portfolio_api.todo.enums.TodoStatus;
-import com.phaiecobyte.portfolio_api.todo.mapper.TodoMapper;
-import com.phaiecobyte.portfolio_api.todo.repository.TodoRepository;
+import com.phaiecobyte.portfolio_api.module.todo.dto.req.TodoCreateReq;
+import com.phaiecobyte.portfolio_api.module.todo.dto.req.TodoUpdateReq;
+import com.phaiecobyte.portfolio_api.module.todo.dto.res.TodoRes;
+import com.phaiecobyte.portfolio_api.module.todo.entity.Todo;
+import com.phaiecobyte.portfolio_api.module.todo.enums.TodoStatus;
+import com.phaiecobyte.portfolio_api.module.todo.mapper.TodoMapper;
+import com.phaiecobyte.portfolio_api.module.todo.repository.TodoRepository;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -14,7 +14,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor

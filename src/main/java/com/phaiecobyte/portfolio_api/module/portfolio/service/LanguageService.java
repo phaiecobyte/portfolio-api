@@ -1,6 +1,6 @@
-package com.phaiecobyte.portfolio_api.portfolio.service;
+package com.phaiecobyte.portfolio_api.module.portfolio.service;
 
-import com.phaiecobyte.portfolio_api.portfolio.model.Language;
+import com.phaiecobyte.portfolio_api.module.portfolio.model.Language;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

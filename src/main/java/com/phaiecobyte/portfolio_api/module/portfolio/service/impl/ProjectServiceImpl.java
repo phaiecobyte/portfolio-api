@@ -1,16 +1,15 @@
-package com.phaiecobyte.portfolio_api.portfolio.service.impl;
+package com.phaiecobyte.portfolio_api.module.portfolio.service.impl;
 
 
-import com.phaiecobyte.portfolio_api.portfolio.model.Project;
-import com.phaiecobyte.portfolio_api.portfolio.repository.ProjectRepository;
-import com.phaiecobyte.portfolio_api.portfolio.service.ProjectService;
+import com.phaiecobyte.portfolio_api.module.portfolio.model.Project;
+import com.phaiecobyte.portfolio_api.module.portfolio.repository.ProjectRepository;
+import com.phaiecobyte.portfolio_api.module.portfolio.service.ProjectService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
-import java.time.LocalDateTime;
 import java.util.List;
 
 @Service

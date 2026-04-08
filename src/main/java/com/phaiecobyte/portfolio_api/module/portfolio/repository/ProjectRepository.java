@@ -1,6 +1,6 @@
-package com.phaiecobyte.portfolio_api.portfolio.repository;
+package com.phaiecobyte.portfolio_api.module.portfolio.repository;
 
-import com.phaiecobyte.portfolio_api.portfolio.model.Project;
+import com.phaiecobyte.portfolio_api.module.portfolio.model.Project;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

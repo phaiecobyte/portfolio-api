@@ -1,4 +1,4 @@
-package com.phaiecobyte.portfolio_api.portfolio.model;
+package com.phaiecobyte.portfolio_api.module.portfolio.model;
 
 import jakarta.persistence.*;
 import lombok.Getter;

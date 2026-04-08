@@ -1,17 +1,15 @@
-package com.phaiecobyte.portfolio_api.todo.controller;
+package com.phaiecobyte.portfolio_api.module.todo.controller;
 
 import com.phaiecobyte.portfolio_api.common.ApiResponse;
-import com.phaiecobyte.portfolio_api.todo.dto.req.TodoCreateReq;
-import com.phaiecobyte.portfolio_api.todo.dto.req.TodoUpdateReq;
-import com.phaiecobyte.portfolio_api.todo.enums.TodoStatus;
-import com.phaiecobyte.portfolio_api.todo.service.TodoService;
+import com.phaiecobyte.portfolio_api.module.todo.dto.req.TodoCreateReq;
+import com.phaiecobyte.portfolio_api.module.todo.dto.req.TodoUpdateReq;
+import com.phaiecobyte.portfolio_api.module.todo.enums.TodoStatus;
+import com.phaiecobyte.portfolio_api.module.todo.service.TodoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/todo")

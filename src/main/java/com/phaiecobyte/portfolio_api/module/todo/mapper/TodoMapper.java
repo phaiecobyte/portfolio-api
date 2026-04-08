@@ -1,9 +1,9 @@
-package com.phaiecobyte.portfolio_api.todo.mapper;
+package com.phaiecobyte.portfolio_api.module.todo.mapper;
 
-import com.phaiecobyte.portfolio_api.todo.dto.req.TodoCreateReq;
-import com.phaiecobyte.portfolio_api.todo.dto.req.TodoUpdateReq;
-import com.phaiecobyte.portfolio_api.todo.dto.res.TodoRes;
-import com.phaiecobyte.portfolio_api.todo.entity.Todo;
+import com.phaiecobyte.portfolio_api.module.todo.dto.req.TodoCreateReq;
+import com.phaiecobyte.portfolio_api.module.todo.dto.req.TodoUpdateReq;
+import com.phaiecobyte.portfolio_api.module.todo.dto.res.TodoRes;
+import com.phaiecobyte.portfolio_api.module.todo.entity.Todo;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 

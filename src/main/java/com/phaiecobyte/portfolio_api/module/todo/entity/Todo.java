@@ -1,15 +1,14 @@
-package com.phaiecobyte.portfolio_api.todo.entity;
+package com.phaiecobyte.portfolio_api.module.todo.entity;
 
 import com.phaiecobyte.portfolio_api.common.AuditField;
-import com.phaiecobyte.portfolio_api.todo.enums.TodoPriority;
-import com.phaiecobyte.portfolio_api.todo.enums.TodoStatus;
+import com.phaiecobyte.portfolio_api.module.todo.enums.TodoPriority;
+import com.phaiecobyte.portfolio_api.module.todo.enums.TodoStatus;
 import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Entity
 @Table(name = "tbl_todos")
