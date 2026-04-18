@@ -5,6 +5,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.List;
+
 @Entity
 @Table(name = "t_pos_order")
 @Getter
@@ -23,4 +25,7 @@ public class Order extends AuditField {
 
     @Column(name = "status", length = 10)
     private String status;
+
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+    private List<OrderItem> items;
 }

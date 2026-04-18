@@ -32,7 +32,7 @@ public class SecurityConfig {
         http
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/public/**","/swagger-ui/**","/v3/api-docs/**", "/api/v1/auth/**", "/api/v1/pos/**").permitAll() // Keep auth endpoints public!
+                        .requestMatchers("/api/public/**","/swagger-ui/**","/v3/api-docs/**", "/api/v1/auth/**", "/pos/api/v1/**").permitAll() // Keep auth endpoints public!
                         .anyRequest().authenticated()
                 )
                 // MAKE IT STATELESS: Spring won't create JSESSIONID cookies anymore

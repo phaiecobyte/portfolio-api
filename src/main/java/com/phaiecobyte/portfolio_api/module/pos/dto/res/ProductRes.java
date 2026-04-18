@@ -13,4 +13,5 @@ public class ProductRes extends AuditFieldDto {
     private String name;
     private long basePrice;
     private String description;
+    private String status;
 }

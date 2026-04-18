@@ -4,6 +4,8 @@ import com.phaiecobyte.portfolio_api.common.AuditField;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 @Entity
 @Table(name = "t_pos_order_item")
@@ -23,6 +25,7 @@ public class OrderItem extends AuditField {
     @Column(name = "fulfillment_status",length = 10)
     private String fulfillmentStatus;
 
+    @JdbcTypeCode(SqlTypes.JSON)
     @Column(columnDefinition = "jsonb")
     private String appliedModifiers;
 

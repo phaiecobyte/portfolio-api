@@ -7,6 +7,8 @@ import lombok.Setter;
 
 import java.util.Set;
 
+import static com.phaiecobyte.portfolio_api.common.Constants.STATUS_ACTIVE;
+
 @Entity
 @Table(name = "t_pos_product")
 @Getter
@@ -26,7 +28,7 @@ public class Product extends AuditField {
     private String description;
 
     @Column(name = "status",length = 10)
-    private String status;
+    private String status = STATUS_ACTIVE;
 
     @ManyToOne
     private Category categories;
